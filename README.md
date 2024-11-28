@@ -1,6 +1,6 @@
 # Turkey
 
-A delightful turkey created with React and CSS.
+A delightful turkey created with React and CSS based on this [tutorial](https://dev.to/alvaromontoro/drawing-a-thanksgiving-turkey-with-css-5e8m)
 
 ## Prerequisites
 
