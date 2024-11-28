@@ -1,5 +1,5 @@
 import React from "react";
-import { Turkey } from "./components/Turkey/Turkey";
+import { Turkey } from "./components/Turkey";
 
 function App() {
   return (

@@ -1,0 +1,233 @@
+.cartoon {
+  width: 80vmin;
+  height: 80vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cartoon div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+.body {
+  width: 40%;
+  height: 40%;
+  background: var(--brown1);
+  color: var(--brown1);
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: -4vmin 14.5vmin 0 -13vmin, 4vmin 14.5vmin 0 -13vmin;
+}
+
+.wing {
+  height: 30%;
+  width: 20%;
+  background: var(--brown2);
+  border-radius: 100% 0% 100% 5%;
+  top: 41%;
+  left: 23%;
+  transform-origin: top right;
+  transform: rotate(-10deg);
+}
+
+.wing + .wing {
+  left: auto;
+  right: 43%;
+  transform: scaleX(-1) rotate(-10deg);
+}
+
+/* Head styles */
+.head {
+  width: 19%;
+  height: 19%;
+  border-radius: 50%;
+  background: var(--brown2);
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  clip-path: polygon(0% 20%, 100% 20%, 100% 500%, 0% 500%);
+}
+
+.head::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 120%;
+  background: var(--brown2);
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0 0 100% 100% / 30%;
+}
+
+.eye {
+  width: 2.5vmin;
+  height: 2.5vmin;
+  background: black;
+  border-radius: 50%;
+  top: 22%;
+  left: 44%;
+}
+
+.eye + .eye {
+  left: 56%;
+}
+
+.beak {
+  width: 4vmin;
+  height: 3vmin;
+  border-left: 4vmin solid var(--orange1);
+  border-top: 1.5vmin solid transparent;
+  border-bottom: 1.5vmin solid transparent;
+  top: 25%;
+  left: 52%;
+}
+
+.red {
+  width: 2.5vmin;
+  height: 6vmin;
+  background: #d00;
+  border-radius: 100% / 100% 0 100% 100%;
+  top: 25%;
+  left: 49%;
+}
+
+/* Leg styles */
+.leg {
+  width: 3%;
+  height: 21%;
+  background: var(--orange1);
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, 0) translate(-4vmin, 0);
+  border-radius: 5vmin / 50%;
+  background-image: repeating-linear-gradient(
+    transparent 0 10%,
+    rgba(0, 0, 0, 0.1) 0 11%
+  );
+}
+
+.leg + .leg {
+  transform: translate(-50%, 0) translate(4vmin, 0);
+}
+
+.leg::before,
+.leg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 35%;
+  left: 50%;
+  bottom: 0;
+  background: var(--orange1);
+  border-radius: 5vmin;
+  transform-origin: 50% 0;
+  transform: translate(-50%, 0) rotate(30deg);
+}
+
+.leg::after {
+  transform: translate(-50%, 0) rotate(-30deg);
+}
+
+/* Hat styles */
+.hat-bottom {
+  width: 35%;
+  height: 8%;
+  border-radius: 50%;
+  background: black;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hat-top {
+  width: 16%;
+  height: 20%;
+  background: black;
+  box-shadow: inset 0 -7vmin #fff3;
+  border-radius: 100% / 230% 230% 0% 0%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hat-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 2vmin;
+  border: 1vmin solid #772;
+  border-radius: 1vmin;
+  bottom: 3.25vmin;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Tail styles */
+.tail {
+  width: 10%;
+  height: 40%;
+  background: var(--orange1);
+  border-radius: 100% / 30% 30% 170% 170%;
+  transform-origin: 50% 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.tail:nth-child(odd) {
+  background: var(--orange1);
+}
+
+.tail:nth-child(even) {
+  background: var(--orange2);
+}
+
+.tail:nth-child(1) {
+  transform: translate(-50%, 0) rotate(0);
+}
+.tail:nth-child(2) {
+  transform: translate(-50%, 0) rotate(17deg);
+}
+.tail:nth-child(3) {
+  transform: translate(-50%, 0) rotate(34deg);
+}
+.tail:nth-child(4) {
+  transform: translate(-50%, 0) rotate(51deg);
+}
+.tail:nth-child(5) {
+  transform: translate(-50%, 0) rotate(68deg);
+}
+.tail:nth-child(6) {
+  transform: translate(-50%, 0) rotate(85deg);
+}
+.tail:nth-child(7) {
+  transform: translate(-50%, 0) rotate(102deg);
+}
+.tail:nth-child(8) {
+  transform: translate(-50%, 0) rotate(-17deg);
+}
+.tail:nth-child(9) {
+  transform: translate(-50%, 0) rotate(-34deg);
+}
+.tail:nth-child(10) {
+  transform: translate(-50%, 0) rotate(-51deg);
+}
+.tail:nth-child(11) {
+  transform: translate(-50%, 0) rotate(-68deg);
+}
+.tail:nth-child(12) {
+  transform: translate(-50%, 0) rotate(-85deg);
+}
+.tail:nth-child(13) {
+  transform: translate(-50%, 0) rotate(-102deg);
+}
